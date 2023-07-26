@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// nuovi
+
+import { SurveyModule } from "survey-angular-ui";
+import { SurveyComponent } from "./components/survey.component";
+import { RadiogroupWithImageQuestion } from "./components/custom-radiogroup.component";
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [AppComponent, SurveyComponent, RadiogroupWithImageQuestion],
+	imports: [BrowserModule, SurveyModule],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+

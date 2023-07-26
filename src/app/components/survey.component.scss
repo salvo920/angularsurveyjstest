@@ -1,0 +1,13 @@
+.radio-group-with-image {
+    display: flex;
+    gap: 10%;
+}
+
+img.radio-group_image {
+    display: flex;
+    width: 40%;
+    height: fit-content;
+}
+.radio-group_choices {
+    display: flex;
+}
