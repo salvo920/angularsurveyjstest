@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 // nuovi
 
 import { SurveyModule } from "survey-angular-ui";
-import { SurveyComponent } from "./components/survey.component";
-import { RadiogroupWithImageQuestion } from "./components/custom-radiogroup.component";
+import { SurveyComponent } from "./components/survey/survey.component";
+import { RadiogroupWithImageQuestion } from "./components/custom-radiogroup/custom-radiogroup.component";
 
 @NgModule({
 	declarations: [AppComponent, SurveyComponent, RadiogroupWithImageQuestion],
