@@ -1,0 +1,10 @@
+<div class="group_description ">
+	<div class="group_description backblueradio" [attr.desc]=" 'a' +model['customDescription']">
+		{{model['customDescription']}}
+	</div>
+
+	<sv-ng-radiogroup-question [model]="model"></sv-ng-radiogroup-question>
+
+	<hr>
+	<pre style="color:black">{{ model | json}}</pre>
+</div>

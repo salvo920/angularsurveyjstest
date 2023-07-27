@@ -9,9 +9,9 @@ import { AppComponent } from './app.component';
 import { SurveyModule } from "survey-angular-ui";
 import { SurveyComponent } from "./components/survey/survey.component";
 import { RadiogroupWithImageQuestion } from "./components/custom-radiogroup/custom-radiogroup.component";
-
+import { CustomDescription } from './components/custom-description/custom-description.component';
 @NgModule({
-	declarations: [AppComponent, SurveyComponent, RadiogroupWithImageQuestion],
+	declarations: [AppComponent, SurveyComponent, RadiogroupWithImageQuestion, CustomDescription],
 	imports: [BrowserModule, SurveyModule],
 	providers: [],
 	bootstrap: [AppComponent]
