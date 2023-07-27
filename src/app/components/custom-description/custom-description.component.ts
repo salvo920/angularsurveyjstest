@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { QuestionRadiogroupModel, RendererFactory, Serializer } from "survey-core";
-import { AngularComponentFactory, QuestionAngular, TextQuestionComponent } from "survey-angular-ui";
+import { AngularComponentFactory, QuestionAngular, SurveyHeaderComponent, TextQuestionComponent } from "survey-angular-ui";
 
 @Component({
 	selector: "finv-description",
@@ -10,13 +10,11 @@ import { AngularComponentFactory, QuestionAngular, TextQuestionComponent } from 
 export class CustomDescription extends QuestionAngular<QuestionRadiogroupModel> { }
 
 // Add a property to the Survey class
-Serializer.addProperty("question", {
-	name: "customDescription",
-	category: "general",
-	visibleIndex: 0
-});
-
-Serializer.addProperty("radiogroup", { name: "image" });
+// Serializer.addProperty("question", {
+// 	name: "customDescription",
+// 	category: "general",
+// 	visibleIndex: 0
+// });
 
 RendererFactory.Instance.registerRenderer(
 	"radiogroup",
